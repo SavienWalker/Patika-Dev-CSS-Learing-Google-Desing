@@ -1,0 +1,183 @@
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background-color: rgb(21, 19, 19);
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+nav ul li{
+    padding: 15px 20px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: aliceblue;
+    position: absolute;
+    transition: 0.9s;
+}
+
+nav ul li:hover::before{
+    width: 100%;
+}
+
+li a{
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+li a:hover{
+    color: rgb(0, 47, 255);
+}
+
+.logo{
+    width: 75px;
+}
+
+#menu-bar{
+    color: aliceblue;
+    padding: 10px 20px;
+    position: absolute;
+    top:20px;
+    transition: 0.7s ease;
+}
+
+#menu-bar:hover{
+    background-color: #d8d8d87a;
+    border-radius: 50px;
+}
+
+.Profile{
+    width: 35px;
+    border-radius: 50px;
+    margin-left: 35px;
+    position: absolute;
+}
+
+button{
+    padding: 5px 40px;
+    background-color: rgba(0, 47, 255, 0.658);
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-left: 800px;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: rgb(0, 47, 255);
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    
+}
+
+.search-box{
+    position: relative;
+}
+
+#google-search{
+    margin-top: 30px;
+    width: 500px;
+    padding: 5px 60px;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+#fa-magnifying-glass{
+    position: absolute;
+    left: 30px;
+    top: 60%;
+    color: aliceblue;
+}
+
+#microphone{
+    position: absolute;
+    right: 30px;
+    top: 60%;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.button-google{
+    margin-top: 30px;
+}
+
+input{
+    background: #D8D8D8;
+    padding: 5px 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.footer-google{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10vh;
+    background-color: #181818;
+}
+
+.content-footer ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.carbon-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 200px;
+}
+
+.text-google{
+    color: aliceblue;
+}
+
+.logo-carbon{
+    width: 100px;
+    padding: 10px;
+}
